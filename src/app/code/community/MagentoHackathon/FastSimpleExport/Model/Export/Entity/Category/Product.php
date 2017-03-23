@@ -5,7 +5,7 @@
  * Date: 10/25/14
  * Time: 11:54 AM
  */
-abstract class MagentoHackathon_FastSimpleExport_Model_Export_Entity_Category_Product extends Mage_ImportExport_Model_Export_Entity_Abstract
+class MagentoHackathon_FastSimpleExport_Model_Export_Entity_Category_Product extends Mage_ImportExport_Model_Export_Entity_Abstract
 {
 
     /**
