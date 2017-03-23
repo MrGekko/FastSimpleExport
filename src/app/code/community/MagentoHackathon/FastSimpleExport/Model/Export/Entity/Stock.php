@@ -55,7 +55,7 @@ class MagentoHackathon_FastSimpleExport_Model_Export_Entity_Stock extends Mage_I
 
         $dataRows        = [];
         $rowMultiselects = [];
-d($this->_storeIdToCode);
+
         // prepare multi-store values and system columns values
         foreach ($this->_storeIdToCode as $storeId => &$storeCode) { // go through all stores
             $collection = $this->_prepareEntityCollection(Mage::getResourceModel('catalog/product_collection'));
