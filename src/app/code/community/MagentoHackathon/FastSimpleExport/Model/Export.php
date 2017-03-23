@@ -10,6 +10,15 @@ class MagentoHackathon_FastSimpleExport_Model_Export extends Mage_ImportExport_M
 
     }
 
+    public function processStockExport($filter = null)
+    {
+        $this->setEntity('catalog_product');
+        $entityAdapter = Mage::getModel('fastsimpleexport/export_entity_stock');
+        $entityAdapter->setParameters($this->getFilters());
+        $this->setEntityAdapter($entityAdapter);
+        return $this->export();
+    }
+
     public function processCategoryProductExport($filter = null)
     {
         $this->setEntity('catalog_category');
